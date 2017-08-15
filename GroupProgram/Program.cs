@@ -88,11 +88,11 @@ namespace GroupProgram
         }
         private static void Printer(List<Group> list)
         {
-            int groupNumber = 1;
+            //int groupNumber = 1;
             foreach (Group names in list)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"Group {groupNumber++}");
+                Console.WriteLine(names.GroupName);
                 
 
                 for (int i = 0; i < names.NumberOfMembers; i++)

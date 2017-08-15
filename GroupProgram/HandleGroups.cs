@@ -147,7 +147,7 @@ namespace GroupProgram
             int counter = 0;
             for (int i = 0; i < groupDistribution.Length; i++)
             {
-                outList.Add(new Group());
+                outList.Add(new Group($"Group {i+1}"));
                 outList[i].NumberOfMembers = groupDistribution[i];
                 outList[i].Names = new string[outList[i].NumberOfMembers];
                 outList[i].GroupLeader = random.Next(outList[i].NumberOfMembers);
