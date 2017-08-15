@@ -9,6 +9,7 @@ namespace GroupProgram
 {
     class HandleGroups
     {
+        //Added a comment
         public List<string> listOfNames;
         public bool avoidRecurringGroups;
         private static string filePathToPreviousGroups = "previousGroups.txt";
