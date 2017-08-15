@@ -82,7 +82,7 @@ namespace GroupProgram
         }
         private static List<string> ListMaker(string names)
         {
-            string[] nameArray = names.Split(',');
+            string[] nameArray = names.Split('.'); // TODO Rename nameArray & NameList
             List<string> nameList = new List<string>(nameArray);
             return nameList;
         }
@@ -111,6 +111,8 @@ namespace GroupProgram
             }
             Console.ForegroundColor = ConsoleColor.White;
         }
+
+        // TODO Take out this code:
         //private static List<string> OrderByAlphabetical(List<string> nameList)
         //{
         //    List<string> alphaList = new List<string>(nameList);
