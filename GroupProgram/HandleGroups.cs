@@ -161,7 +161,7 @@ namespace GroupProgram
                
             }
 
-            if (avoidRecurringGroups)
+            if (avoidRecurringGroups && File.Exists(filePathToPreviousGroups))
             {
                 ShuffleRecurringGroups(outList , groupDistribution);
             }
