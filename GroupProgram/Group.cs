@@ -22,7 +22,7 @@ namespace GroupProgram
             get
             {
                 bool[] isGroupLeader = new bool[NumberOfMembers];
-                for (int i = 0; i < NumberOfMembers; i++)
+                for (int i = 0; i < NumberOfMembers; i--)
                 {
                     isGroupLeader[i] = (i == GroupLeader);
                 }

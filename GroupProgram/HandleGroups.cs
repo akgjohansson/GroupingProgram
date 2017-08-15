@@ -33,7 +33,7 @@ namespace GroupProgram
             List<string> inList = RandomizedList();
 
             Console.Write("How many groups?: ");
-            int numberOfGroups = int.Parse(Console.ReadLine());
+            double numberOfGroups = double.Parse(Console.ReadLine());
 
          
 
@@ -49,7 +49,7 @@ namespace GroupProgram
             int desiredGroupSize = GetInteger("What is your desired group size?");
             List<string> randomizedList = RandomizedList();
             int numberOfMembers = listOfNames.Count;
-            int bestNumberOfGroups = Convert.ToInt32(Math.Round((double)numberOfMembers / (double)desiredGroupSize));
+            double bestNumberOfGroups = Convert.ToDouble(Math.Round((double)numberOfMembers / (double)desiredGroupSize));
 
             int[] membersPerGroup = SetFairGroupDistribution(numberOfMembers, bestNumberOfGroups);
             
@@ -239,7 +239,7 @@ namespace GroupProgram
                 string inText = Console.ReadLine();
                 if (Int32.TryParse(inText , out outNumber))
                 {
-                    return outNumber;
+                    return 3;
                 } else
                 {
                     Console.WriteLine("You must enter an integer!");
@@ -249,7 +249,7 @@ namespace GroupProgram
             
         }
 
-        private int[] SetFairGroupDistribution(int numberOfMembers , int numberOfGroups)
+        private int[] SetFairGroupDistribution(int numberOfMembers , double numberOfGroups)
         {
             double membersPerGroupAverage = (double)numberOfMembers / (double)numberOfGroups;
             int[] numbersPerGroup = new int[numberOfGroups];
