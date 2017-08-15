@@ -140,7 +140,7 @@ namespace GroupProgram
 
         private static HandleGroups GetListOfNamesMethod()
         {
-            HandleGroups groups = new HandleGroups(@"C:\Users\Andreas.Johansson\Documents\Visual Studio 2017\Projects\GroupProgram\nameList.txt");
+            HandleGroups groups = new HandleGroups(@"..\..\..\nameList.txt");
             return groups;
         }
 
