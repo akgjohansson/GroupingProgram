@@ -375,11 +375,11 @@ namespace GroupProgram
         private void SwapTwoMembers(List<Group> list, int minGroup , int maxGroup)
         {
             Random random = new Random();
-            int toMaxIndex = random.Next(list[maxGroup].NumberOfMembers);
-            int toMinIndex = random.Next(list[minGroup].NumberOfMembers);
+            int toMinIndex = random.Next(list[maxGroup].NumberOfMembers);
+            int toMaxIndex = random.Next(list[minGroup].NumberOfMembers);
 
-            string toMinName = list[maxGroup].Names[toMaxIndex];
-            string toMaxName = list[minGroup].Names[toMinIndex];
+            string toMinName = list[maxGroup].Names[toMinIndex];
+            string toMaxName = list[minGroup].Names[toMaxIndex];
 
             List<string> maxGroupNames = list[maxGroup].Names.ToList();
             List<string> minGroupNames = list[minGroup].Names.ToList();
