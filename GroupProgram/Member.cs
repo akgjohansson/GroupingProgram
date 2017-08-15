@@ -9,10 +9,12 @@ namespace GroupProgram
     class Member
     {
         public string Name { get; set; }
+        Gender Gender;
 
-        public Member(string name)
+        public Member(string name, Gender gender)
         {
             Name = name;
+            Gender = gender;
         }
     }
 }
