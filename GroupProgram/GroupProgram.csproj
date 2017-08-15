@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gender.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="HandleGroups.cs" />
     <Compile Include="Member.cs" />
