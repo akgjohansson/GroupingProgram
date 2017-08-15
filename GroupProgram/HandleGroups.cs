@@ -51,11 +51,7 @@ namespace GroupProgram
             int bestNumberOfGroups = Convert.ToInt32(Math.Round((double)numberOfMembers / (double)desiredGroupSize));
 
             int[] membersPerGroup = SetFairGroupDistribution(numberOfMembers, bestNumberOfGroups);
-
-            foreach (int item in membersPerGroup)
-            {
-                Console.WriteLine(item);
-            }
+            
             return MakeAListOutOfThese(membersPerGroup, randomizedList);
         }
 
