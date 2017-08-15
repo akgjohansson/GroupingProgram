@@ -124,9 +124,9 @@ namespace GroupProgram
         static HandleGroups GetListOfNames()
         {
             HandleGroups groups;
-            Console.WriteLine("Do you want to add members via a text file?");
+            Console.WriteLine("Do you want to add members via a text file? [y/n]: ");
             string answer = Console.ReadLine();
-            if (answer == "y" || answer == "Y")
+            if (answer.ToLower() == "y")
             {
                 groups = GetListOfNamesMethod();
             }
@@ -140,7 +140,7 @@ namespace GroupProgram
 
         private static HandleGroups GetListOfNamesMethod()
         {
-            HandleGroups groups = new HandleGroups("C:\\Users\\Andreas.Johansson\\Documents\\Visual Studio 2017\\Projects\\GroupProgram\\nameList.txt");
+            HandleGroups groups = new HandleGroups(@"C:\Users\Andreas.Johansson\Documents\Visual Studio 2017\Projects\GroupProgram\nameList.txt");
             return groups;
         }
 
