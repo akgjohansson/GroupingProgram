@@ -11,6 +11,13 @@ namespace GroupProgram
         public string[] Names { get; set; }
         public int NumberOfMembers { get; set; }
         public int GroupLeader;
+        //TODO: Use GroupName when creating groups
+        public string GroupName { get;}
+
+        public Group(string groupName)
+        {
+            GroupName = groupName;
+        }
         public bool[] IsGroupLeader
         {
             get
